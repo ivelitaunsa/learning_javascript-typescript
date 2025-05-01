@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Funciones en javascript</h3>
+        <div>
+            <p>Las funciones puede recibir o no parámetros</p>
+            <h3>Funcion sin parámetro</h3>
+            <button onclick="imprimirFormatoFuncion()">Mostrar formato</button>
+            <code id="funcionSinParametro"></code>
+        </div>
+        <div>
+            <h3>Funcion con parámetros</h3>
+            <p>Pueden recibir cualquier tipo de dato siempre que se declare en la funcion, esto se suele usar con valores de retorno tambien</p>
+            <label for="number1">Numero 1: </label>
+            <input type="number" id="number1">
+            <label for="number2">Numero 2: </label>
+            <input type="number" id="number2">
+            <button onclick="producto2Numeros(document.getElementById('number1'), document.getElementById('number2'))">Mostrar resultado</button>
+            <p id="producto2Numeros">Producto = </p>
+        </div>
+        <div>
+            <h3>Funciones Lambda o flecha, usando APIs</h3>
+            <p>Vamos a obtener el nombre de un usuario y calcular la longitud de su nombre completo (nombre + apellido)</p>
+            <button onclick="obtenerUsuarioYCalcularLongitud()">Obtener usuario y calcular longitud</button>
+            <p id="resultadoApi"></p>
+        </div>
+    </div>
+    <h3><a href="./../index.html">Volver a la anterior página</a></h3>
+    <script src="./../scripts/funciones.js"></script>
+</body>
+</html>

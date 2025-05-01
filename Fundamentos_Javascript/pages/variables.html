@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Variables</h1>
+    </div>
+    <div>
+        <h3>Probando variable "var"</h3>
+        <p>La declaración "var" es de las primeras existentes. Suele ser usada para declarar variables globales</p>
+        <h3>Variable var inicial actual: </h3>
+        <p id="variableGlobal1"></p>
+        <h3>Presionar el botón para ver los valores que toma la variable global</h3>
+        <button onclick="ejecutarEjemploVar()">Cambiar variable global</button>
+        <p id="variableGlobal2"> variable global dentro de la funcion: </p>
+        <p id="variableGlobal3"> variable global dentro del if dentro de la funcion: </p>
+        <button onclick="mostrarVar()">Verificar variable var</button>
+    </div>
+    <div>
+        <h3>Probando variable "let"</h3>
+        <p>La declaración let se caracteriza por no ser accesible antes de declararla por eso en cada bloque siempre se debe colocar</p>
+        <h3>Variable let inicial actual: </h3>
+        <p id="variable1"></p>
+        <h3>Presionar el botón para ver los valores que toma la variable declarado con let</h3>
+        <button onclick="ejecutarEjemploLet()">Cambiar variable</button>
+        <p id="variable2"> variable dentro de la funcion: </p>
+        <p id="variable3"> variable dentro del if dentro de la funcion: </p>
+        <button onclick="mostrarLet()">Verificar variable let</button>
+    </div>
+    <div>
+        <h3>Probando variable "const"</h3>
+        <p>La declaración const no puede ser alterada</p>
+        <h3>Constante inicial actual: </h3>
+        <p id="constante1"></p>
+        <h3>Presionar para "intentar" cambiar el valor de la constante</h3>
+        <button onclick="ejecutarEjemploConst()">Cambiar constante</button>
+        <p id="constante2"> variable dentro de la funcion (revisar la consola con F12): </p>
+        <h3>Sin embargo, los elementos de un arreglo constante si pueden cambiar</h3>
+        <p id="arreglo1"></p>
+        <button onclick="cambiarElementos()">Cambiar arreglo constante</button>
+        <p id="arreglo2"> Datos cambiados: </p>
+    </div>
+
+
+    <h3><a href="./../index.html">Volver a la anterior página</a></h3>
+    <script src="./../scripts/variables.js"></script>
+</body>
+</html>
